@@ -1,0 +1,402 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #00ff41;
+  --card-bg: #1a1a1a;
+  --terminal-bg: #0a0a0a;
+  --cyber-green: #00ff41;
+  --cyber-blue: #00d4ff;
+  --cyber-purple: #9d4edd;
+  --cyber-pink: #ff0080;
+  --border-color: #00ff41;
+  --scrollbar-track: #0a0a0a;
+  --scrollbar-thumb: #00ff41;
+  --scrollbar-thumb-hover: #00d4ff;
+}
+
+.light {
+  --background: #f1f5f9;
+  --foreground: #1e293b;
+  --card-bg: #ffffff;
+  --terminal-bg: #e2e8f0;
+  --cyber-green: #059669;
+  --cyber-blue: #0284c7;
+  --cyber-purple: #7c3aed;
+  --cyber-pink: #dc2626;
+  --border-color: #059669;
+  --scrollbar-track: #f1f5f9;
+  --scrollbar-thumb: #64748b;
+  --scrollbar-thumb-hover: #0284c7;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #00ff41;
+  --card-bg: #1a1a1a;
+  --terminal-bg: #0a0a0a;
+  --cyber-green: #00ff41;
+  --cyber-blue: #00d4ff;
+  --cyber-purple: #9d4edd;
+  --cyber-pink: #ff0080;
+  --border-color: #00ff41;
+  --scrollbar-track: #0a0a0a;
+  --scrollbar-thumb: #00ff41;
+  --scrollbar-thumb-hover: #00d4ff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-fira-code), monospace;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Matrix rain effect */
+.matrix-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+/* Glitch text effect */
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.glitch::before {
+  animation: glitch 1s infinite;
+  color: #ff0080;
+  z-index: -1;
+}
+
+.glitch::after {
+  animation: glitch 1s infinite reverse;
+  color: #00d4ff;
+  z-index: -2;
+}
+
+/* Terminal cursor */
+.terminal-cursor::after {
+  content: '_';
+  animation: blink 1s infinite;
+  color: #00ff41;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Glow effects */
+.glow-border {
+  border: 1px solid #00ff41;
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+  transition: all 0.3s ease;
+}
+
+.glow-border:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.6);
+}
+
+/* Code block styling */
+.code-block {
+  background: #0a0a0a;
+  border: 1px solid #00ff41;
+  border-left: 4px solid #00ff41;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+  position: relative;
+}
+
+.code-block::before {
+  content: '> ';
+  color: #00ff41;
+  font-weight: bold;
+}
+
+/* Better pre-formatted text handling */
+pre {
+  white-space: pre !important;
+  word-wrap: normal !important;
+  font-family: var(--font-fira-code), 'Courier New', monospace !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+code {
+  font-family: var(--font-fira-code), 'Courier New', monospace !important;
+  font-size: 0.85em !important;
+  white-space: pre !important;
+  display: block !important;
+  overflow-x: auto !important;
+}
+
+/* Improve list spacing */
+ul, ol {
+  margin: 1rem 0 !important;
+  padding-left: 2rem !important;
+}
+
+li {
+  margin: 0.5rem 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* Better paragraph spacing */
+p {
+  margin: 1rem 0 !important;
+  line-height: 1.7 !important;
+}
+
+/* Heading spacing */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5rem 0 1rem 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(0, 255, 65, 0.3);
+  color: #ffffff;
+}
+
+/* Light mode specific overrides */
+.light .terminal-cursor::after {
+  color: var(--cyber-green) !important;
+}
+
+.light .glitch::before {
+  color: var(--cyber-pink) !important;
+}
+
+.light .glitch::after {
+  color: var(--cyber-blue) !important;
+}
+
+.light .code-block {
+  background: var(--terminal-bg) !important;
+  border-color: var(--cyber-green) !important;
+}
+
+.light .code-block::before {
+  color: var(--cyber-green) !important;
+}
+
+.light pre::-webkit-scrollbar-thumb {
+  background: var(--cyber-green) !important;
+}
+
+.light pre::-webkit-scrollbar-thumb:hover {
+  background: var(--cyber-blue) !important;
+}
+
+.light ::selection {
+  background: rgba(5, 150, 105, 0.3) !important;
+  color: var(--foreground) !important;
+}
+
+/* Light mode text color overrides */
+.light .text-gray-300 {
+  color: #475569 !important;
+}
+
+.light .text-gray-400 {
+  color: #64748b !important;
+}
+
+.light .text-matrix-green {
+  color: var(--cyber-green) !important;
+}
+
+.light .text-cyber-green {
+  color: var(--cyber-green) !important;
+}
+
+.light .text-cyber-blue {
+  color: var(--cyber-blue) !important;
+}
+
+.light .text-cyber-purple {
+  color: var(--cyber-purple) !important;
+}
+
+.light .text-cyber-pink {
+  color: var(--cyber-pink) !important;
+}
+
+/* Light mode border overrides */
+.light .border-cyber-green {
+  border-color: var(--cyber-green) !important;
+}
+
+.light .border-cyber-blue {
+  border-color: var(--cyber-blue) !important;
+}
+
+.light .border-cyber-purple {
+  border-color: var(--cyber-purple) !important;
+}
+
+.light .border-cyber-pink {
+  border-color: var(--cyber-pink) !important;
+}
+
+/* Light mode background overrides */
+.light .bg-terminal-bg {
+  background-color: var(--terminal-bg) !important;
+}
+
+.light .bg-card-bg {
+  background-color: var(--card-bg) !important;
+}
+
+/* Light mode button text overrides */
+.light .bg-cyber-green {
+  color: #000000 !important;
+}
+
+.light .hover\:bg-cyber-blue:hover {
+  color: #ffffff !important;
+}
+
+/* Specific override for writeup button icons */
+.light .bg-cyber-green .text-white {
+  color: #000000 !important;
+}
+
+/* Light mode WriteupModal overrides */
+.light .text-gray-200 {
+  color: #374151 !important;
+}
+
+.light .prose-invert {
+  color: #374151 !important;
+}
+
+.light .prose-p\:text-gray-200 p {
+  color: #374151 !important;
+}
+
+.light .prose-li\:text-gray-200 li {
+  color: #374151 !important;
+}
+
+.light .prose-blockquote\:text-gray-300 blockquote {
+  color: #64748b !important;
+  background-color: #f1f5f9 !important;
+}
+
+.light .prose-blockquote\:bg-gray-800\/30 blockquote {
+  background-color: #f1f5f9 !important;
+}
+
+.light .prose-pre\:bg-terminal-bg pre {
+  background-color: var(--terminal-bg) !important;
+  color: #374151 !important;
+}
+
+.light .prose-code\:bg-terminal-bg code {
+  background-color: var(--terminal-bg) !important;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Copy status animation */
+@keyframes copyPulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.copy-status {
+  animation: copyPulse 0.3s ease-out;
+}
+
+/* Smooth scrollbar for code blocks */
+pre::-webkit-scrollbar {
+  height: 6px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: var(--cyber-green);
+  border-radius: 3px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: var(--cyber-blue);
+}
+
+/* Line clamp utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
