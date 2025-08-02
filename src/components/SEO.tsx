@@ -85,8 +85,8 @@ export default function SEO({
           "url": siteUrl,
           "sameAs": [
             "https://twitter.com/0xJerry",
-            "https://github.com/0xJerry",
-            "https://linkedin.com/in/0xjerry"
+            "https://github.com/jery0843",
+            "https://linkedin.com/in/jeromeandrewk"
           ],
           "jobTitle": "Cybersecurity Researcher",
           "worksFor": {
@@ -119,7 +119,7 @@ export default function SEO({
           },
           "sameAs": [
             "https://twitter.com/0xJerry",
-            "https://github.com/0xJerry"
+            "https://github.com/jery0843"
           ]
         }
       ]
