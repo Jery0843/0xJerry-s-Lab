@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "reverse engineering",
     "malware analysis"
   ],
-  authors: [{ name: "0xJerry", url: "https://0xjerrys-lab.com" }],
+  authors: [{ name: "0xJerry", url: "https://jerry.securenotepad.tech" }],
   creator: "0xJerry",
   publisher: "0xJerry's Lab",
   robots: {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://0xjerrys-lab.com",
+    url: "https://jerry.securenotepad.tech",
     title: "0xJerry's Lab - Cybersecurity Research & HTB Writeups",
     description: "Expert cybersecurity research, penetration testing tutorials, and detailed Hack The Box writeups. Learn offensive security with comprehensive guides.",
     siteName: "0xJerry's Lab",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   category: "technology",
   classification: "Cybersecurity Education",
   alternates: {
-    canonical: "https://0xjerrys-lab.com",
+    canonical: "https://jerry.securenotepad.tech",
   },
 };
 
