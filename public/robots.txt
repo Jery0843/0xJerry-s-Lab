@@ -20,9 +20,9 @@ Allow: /api/cve
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://0xjerrys-lab.com/sitemap.xml
-Sitemap: https://0xjerrys-lab.com/sitemap-machines.xml
-Sitemap: https://0xjerrys-lab.com/sitemap-tools.xml
+Sitemap: https:/jerry.securenotepad.tech/sitemap.xml
+Sitemap: https://jerry.securenotepad.tech/sitemap-machines.xml
+Sitemap: https://jerry.securenotepad.tech/sitemap-tools.xml
 
 # Block specific bots if needed (example)
 # User-agent: BadBot
