@@ -183,8 +183,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **Live Demo**: [0x-jerry-s-lab.vercel.app](https://0x-jerry-s-lab.vercel.app)
-- **GitHub**: [github.com/0xjerry/lab](https://github.com/0xjerry/lab)
+- **Live Demo**: [jerry.securenotepad.tech](https://jerry.securenotepad.tech/)
+- **GitHub**: [github.com/Jery0843/lab](https://github.com/0xjerry/lab)
 - **Documentation**: See `/docs` directory for detailed setup guides
 
 ---
