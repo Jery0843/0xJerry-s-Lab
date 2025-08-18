@@ -71,8 +71,7 @@ CLOUDFLARE_API_TOKEN=your_api_token
 CLOUDFLARE_ACCOUNT_ID=your_account_id  
 CLOUDFLARE_DATABASE_ID=your_database_id
 
-# Admin Authentication
-ADMIN_PASSWORD_HASH=your_hashed_password
+
 ```
 
 ### Local Development
