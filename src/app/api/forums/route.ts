@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import { NextRequest } from 'next/server';
 
 // Reddit API credentials
-const REDDIT_CLIENT_ID = "OB6XY3DYpjq4htHLwie-Sg";
-const REDDIT_CLIENT_SECRET = "OCawyv-NJL6zjf4YBhQn_OWZ-2sdLA";
+const REDDIT_CLIENT_ID = "_in9szoOfEmvTyhhHobFdQ";
+const REDDIT_CLIENT_SECRET = "uyNkDPz52_wPfnQkJrrF0sBa08a0Vg";
 
 // Stack Overflow API key
 const STACK_OVERFLOW_API_KEY = "rl_42fHk5pV8h3dnuQSFpqW12GB1";
