@@ -15,3 +15,11 @@
     }
   }
 }
+{
+  "rewrites": [
+    {
+      "source": "/machines/:path*",
+      "destination": "/403.html"
+    }
+  ]
+}
