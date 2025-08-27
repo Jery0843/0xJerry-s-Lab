@@ -13,9 +13,7 @@
     "src/app/api/**/*.ts": {
       "maxDuration": 30
     }
-  }
-}
-{
+  },
   "rewrites": [
     {
       "source": "/machines/:path*",
