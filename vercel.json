@@ -16,7 +16,12 @@
   },
   "redirects": [
     {
-      "source": "/machines/:path+",
+      "source": "/machines/htb/:path+",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/thm/:path+",
       "destination": "/403.html",
       "permanent": false
     }
