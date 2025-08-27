@@ -14,10 +14,11 @@
       "maxDuration": 30
     }
   },
-  "rewrites": [
+  "redirects": [
     {
       "source": "/machines/:path*",
-      "destination": "/403.html"
+      "destination": "/403.html",
+      "permanent": false
     }
   ]
 }
