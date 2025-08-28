@@ -102,7 +102,7 @@
     },
     {
       "source": "/machines/thm/:path+",
-      "destination": "/403.html",
+      "destination": "https://thm-writeups.securenotepad.tech/403",
       "permanent": false
     }
   ]
