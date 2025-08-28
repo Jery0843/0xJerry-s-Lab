@@ -99,7 +99,7 @@
       "source": "/machines/htb/voleur",
       "destination": "/403.html",
       "permanent": false
-    },
+    }
     
   ]
 }
