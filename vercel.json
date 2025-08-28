@@ -100,10 +100,6 @@
       "destination": "/403.html",
       "permanent": false
     },
-    {
-      "source": "/machines/thm/:path+",
-      "destination": "https://thm-writeups.securenotepad.tech/403",
-      "permanent": false
-    }
+    
   ]
 }
