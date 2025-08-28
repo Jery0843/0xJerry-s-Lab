@@ -16,7 +16,7 @@
   },
   "redirects": [
     {
-      "source": "/machines/htb/:path*",
+      "source": "/machines/htb/:path+",
       "destination": "/403.html",
       "permanent": false
     },
