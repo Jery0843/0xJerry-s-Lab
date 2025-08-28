@@ -11,7 +11,10 @@
     "lint": "next lint",
     "db:migrate": "npx wrangler d1 execute jerrys-lab --file=database/schema.sql",
     "db:migrate:remote": "npx wrangler d1 execute jerrys-lab --file=database/schema.sql --remote",
-    "db:shell": "npx wrangler d1 execute jerrys-lab --command"
+    "db:shell": "npx wrangler d1 execute jerrys-lab --command",
+    "predeploy": "node generate-vercel.js",
+    "deploy": "vercel --prod",
+    "preview": "vercel"
   },
   "dependencies": {
     "@types/node-fetch": "^2.6.13",
