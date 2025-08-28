@@ -2,20 +2,23 @@
 const fs = require("fs");
 
 // ✅ just edit these two arrays
-const htbRestricted = [
-  "codetwo","previous"
-  // add/remove HTB machine names here
-];
-
-const thmRestricted = [
-  "brooklyn-nine-nine", "ignite", "rootme", "picklerick", "blue"
-  // add/remove THM machine names here
-];
+const htbRestricted = ["openadmin", "codetwo", "previous"];
+const thmRestricted = ["ignite", "rootme", "picklerick"];
 
 // 🚀 build redirects
 const redirects = [
   ...htbRestricted.map(name => ({
+    source: `/machines/htb/${name}`,
+    destination: "/403.html",
+    permanent: false
+  })),
+  ...htbRestricted.map(name => ({
     source: `/machines/htb/${name}/:path*`,
+    destination: "/403.html",
+    permanent: false
+  })),
+  ...thmRestricted.map(name => ({
+    source: `/machines/thm/${name}`,
     destination: "/403.html",
     permanent: false
   })),
