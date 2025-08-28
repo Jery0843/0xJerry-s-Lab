@@ -15,13 +15,93 @@
     }
   },
   "redirects": [
-    {
-      "source": "/machines/htb/:path+",
+     {
+      "source": "/machines/htb/codetwo",
       "destination": "/403.html",
       "permanent": false
     },
     {
-      "source": "/machines/thm/:path*",
+      "source": "/machines/htb/previous",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/darkcorp",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/editor",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/environment",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/puppy",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/certificate",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/mirage",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/rustykey",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/eureka",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/era",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/planning",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/fluffy",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/tombwatcher",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/artificial",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/outbound",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/htb/voleur",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
+      "source": "/machines/thm/:path+",
       "destination": "/403.html",
       "permanent": false
     }
