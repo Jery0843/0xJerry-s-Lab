@@ -61,11 +61,6 @@
       "permanent": false
     },
     {
-      "source": "/machines/htb/eureka",
-      "destination": "/403.html",
-      "permanent": false
-    },
-    {
       "source": "/machines/htb/era",
       "destination": "/403.html",
       "permanent": false
