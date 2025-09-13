@@ -41,11 +41,6 @@
       "permanent": false
     },
     {
-      "source": "/machines/htb/environment",
-      "destination": "/403.html",
-      "permanent": false
-    },
-    {
       "source": "/machines/htb/puppy",
       "destination": "/403.html",
       "permanent": false
@@ -67,11 +62,6 @@
     },
     {
       "source": "/machines/htb/era",
-      "destination": "/403.html",
-      "permanent": false
-    },
-    {
-      "source": "/machines/htb/planning",
       "destination": "/403.html",
       "permanent": false
     },
