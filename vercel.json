@@ -16,6 +16,11 @@
   },
   "redirects": [
      {
+      "source": "/machines/htb/soulmate",
+      "destination": "/403.html",
+      "permanent": false
+    },
+     {
       "source": "/machines/htb/guardian",
       "destination": "/403.html",
       "permanent": false
