@@ -182,8 +182,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **Live Demo**: [jerry.securenotepad.tech](https://jerry.securenotepad.tech/)
-- **GitHub**: [github.com/Jery0843/lab](https://github.com/0xjerry/lab)
+- **Live**: [0xjerry.is-a.dev](https://0xjerry.is-a.dev/)
+- **GitHub**: [github.com/Jery0843/0xJerry-s-Lab](https://github.com/jery0843/0xJerry-s-Lab)
 - **Documentation**: See `/docs` directory for detailed setup guides
 
 ---
