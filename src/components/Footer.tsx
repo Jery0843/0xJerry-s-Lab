@@ -24,7 +24,7 @@ const Footer = () => {
               <span className="text-sm">LinkedIn</span>
             </a>
             <a
-              href="mailto:jeromeandrew@proton.me"
+              href="mailto:OxJerry@proton.me"
               className="flex items-center space-x-2 text-cyber-green hover:text-cyber-blue transition-colors duration-300 group"
             >
               <FaEnvelope className="group-hover:animate-pulse" />
