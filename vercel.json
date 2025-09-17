@@ -15,6 +15,11 @@
     }
   },
   "redirects": [
+    {
+      "source": "/machines/htb/hacknet",
+      "destination": "/403.html",
+      "permanent": false
+    },
      {
       "source": "/machines/htb/soulmate",
       "destination": "/403.html",
