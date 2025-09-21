@@ -81,11 +81,6 @@
       "permanent": false
     },
     {
-      "source": "/machines/htb/fluffy",
-      "destination": "/403.html",
-      "permanent": false
-    },
-    {
       "source": "/machines/htb/tombwatcher",
       "destination": "/403.html",
       "permanent": false
