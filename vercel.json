@@ -16,6 +16,11 @@
   },
   "redirects": [
     {
+      "source": "/machines/htb/expressway",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
       "source": "/machines/htb/hacknet",
       "destination": "/403.html",
       "permanent": false
