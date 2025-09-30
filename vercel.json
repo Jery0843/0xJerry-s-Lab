@@ -16,6 +16,11 @@
   },
   "redirects": [
     {
+      "source": "/machines/htb/imagery",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
       "source": "/machines/htb/expressway",
       "destination": "/403.html",
       "permanent": false
@@ -52,11 +57,6 @@
     },
     {
       "source": "/machines/htb/editor",
-      "destination": "/403.html",
-      "permanent": false
-    },
-    {
-      "source": "/machines/htb/puppy",
       "destination": "/403.html",
       "permanent": false
     },
