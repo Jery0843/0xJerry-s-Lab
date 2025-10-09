@@ -16,6 +16,11 @@
   },
   "redirects": [
     {
+      "source": "/machines/htb/darkzero",
+      "destination": "/403.html",
+      "permanent": false
+    },
+    {
       "source": "/machines/htb/imagery",
       "destination": "/403.html",
       "permanent": false
@@ -57,11 +62,6 @@
     },
     {
       "source": "/machines/htb/editor",
-      "destination": "/403.html",
-      "permanent": false
-    },
-    {
-      "source": "/machines/htb/certificate",
       "destination": "/403.html",
       "permanent": false
     },
