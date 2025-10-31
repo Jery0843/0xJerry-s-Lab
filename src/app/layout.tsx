@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://0xjerry.jerome.co.in",
+    url: "https://0xjerry.is-a.dev",
     title: "0xJerry's Lab - Cybersecurity Research & HTB Writeups",
     description: "Expert cybersecurity research, penetration testing tutorials, and detailed Hack The Box writeups. Learn offensive security with comprehensive guides.",
     siteName: "0xJerry's Lab",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
   category: "technology",
   classification: "Cybersecurity Education",
   alternates: {
-    canonical: "https://0xjerry.jerome.co.in",
+    canonical: "https://0xjerry.is-a.dev",
   },
 };
 
