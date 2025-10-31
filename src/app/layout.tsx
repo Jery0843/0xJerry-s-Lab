@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     creator: "@0xJerry",
   },
   verification: {
-    google: "rGGammldixgdv1c4AIfphZKC8aCsx3_CgXObrf4GIu4",
+    google: "your-google-verification-code",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
@@ -147,6 +147,7 @@ export default function RootLayout({
               });
             `
           }}
+        />
         
         <RootLayoutContent>{children}</RootLayoutContent>
       </body>
