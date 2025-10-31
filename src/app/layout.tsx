@@ -133,19 +133,15 @@ export default function RootLayout({
         <Script
           src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
           strategy="afterInteractive"
-        />
-        <Script
-          id="kofi-widget"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              kofiWidgetOverlay.draw('andres__', {
+          onLoad={() => {
+            if (typeof window !== 'undefined' && (window as any).kofiWidgetOverlay) {
+              (window as any).kofiWidgetOverlay.draw('andres__', {
                 'type': 'floating-chat',
                 'floating-chat.donateButton.text': 'Support me',
                 'floating-chat.donateButton.background-color': '#5cb85c',
                 'floating-chat.donateButton.text-color': '#fff'
               });
-            `
+            }
           }}
         />
         
