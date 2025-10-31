@@ -135,14 +135,18 @@ export default function RootLayout({
           strategy="lazyOnload"
         />
         <Script
-  src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
-  strategy="afterInteractive"
-/>
-<Script
-  id="kofi-widget"
-  strategy="afterInteractive"
-  dangerouslySetInnerHTML={{...}}
-/>
+          id="kofi-widget"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              kofiWidgetOverlay.draw('andres__', {
+                'type': 'floating-chat',
+                'floating-chat.donateButton.text': 'Support me',
+                'floating-chat.donateButton.background-color': '#5cb85c',
+                'floating-chat.donateButton.text-color': '#fff'
+              });
+            `
+          }}
         
         <RootLayoutContent>{children}</RootLayoutContent>
       </body>
