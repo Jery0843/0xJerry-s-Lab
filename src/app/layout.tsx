@@ -131,17 +131,28 @@ export default function RootLayout({
         
         {/* Ko-fi Widget */}
         <Script
-          src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
+          id="kofi-widget"
           strategy="afterInteractive"
-          onLoad={() => {
-            if (typeof window !== 'undefined' && (window as any).kofiWidgetOverlay) {
-              (window as any).kofiWidgetOverlay.draw('andres__', {
-                'type': 'floating-chat',
-                'floating-chat.donateButton.text': 'Support me',
-                'floating-chat.donateButton.background-color': '#5cb85c',
-                'floating-chat.donateButton.text-color': '#fff'
-              });
-            }
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var script = document.createElement('script');
+                script.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
+                script.onload = function() {
+                  setTimeout(function() {
+                    if (typeof kofiWidgetOverlay !== 'undefined') {
+                      kofiWidgetOverlay.draw('andres__', {
+                        'type': 'floating-chat',
+                        'floating-chat.donateButton.text': 'Support me',
+                        'floating-chat.donateButton.background-color': '#5cb85c',
+                        'floating-chat.donateButton.text-color': '#fff'
+                      });
+                    }
+                  }, 1000);
+                };
+                document.head.appendChild(script);
+              })();
+            `
           }}
         />
         
