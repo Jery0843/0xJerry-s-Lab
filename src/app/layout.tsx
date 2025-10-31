@@ -132,11 +132,11 @@ export default function RootLayout({
         {/* Ko-fi Widget */}
         <Script
           src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
         <Script
           id="kofi-widget"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               kofiWidgetOverlay.draw('andres__', {
